@@ -1696,11 +1696,11 @@ footer {
 }
 .footer-address {
   color: #fff;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
   margin-bottom: 16px;
-  font-size: 21px;
-  font-weight: 750;
-  line-height: 1.22;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.3;
 }
 .footer-address b {
   color: var(--lime);
@@ -1708,8 +1708,8 @@ footer {
 }
 .footer-phone {
   color: var(--lime);
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
 }
 .footer-email {
   color: #ffffff94;
