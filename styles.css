@@ -1590,7 +1590,8 @@ footer a:hover {
 }
 .price-card {
   color: var(--ink);
-  background: #fff;
+  background: var(--paper);
+  border-radius: 5px;
   padding: 36px;
 }
 .price-top {
