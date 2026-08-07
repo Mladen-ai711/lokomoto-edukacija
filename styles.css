@@ -1638,6 +1638,10 @@ footer a:hover {
   font-size: 9px;
   display: block;
 }
+.price-card .button-primary:hover {
+  color: var(--paper);
+  background: var(--teal-dark);
+}
 footer {
   min-height: 130px;
   padding-inline: max(32px, calc((100% - var(--max)) / 2));
