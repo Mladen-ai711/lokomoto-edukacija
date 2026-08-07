@@ -2140,7 +2140,7 @@ footer > div {
   color: var(--ink);
 }
 .header-cta span {
-  background: #404040;
+  background: var(--teal-dark);
   color: var(--lime);
 }
 .hero {
