@@ -2530,11 +2530,12 @@ footer > div {
   display: grid;
 }
 .hero-premium .hero-lead {
-  color: var(--muted);
-  max-width: 560px;
+  color: #52605c;
+  max-width: 610px;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.62;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .hero-premium .hero-actions {
   justify-content: flex-end;
@@ -2830,7 +2831,7 @@ footer > div {
     display: block !important;
   }
   .hero-premium .hero-lead {
-    font-size: 15px;
+    font-size: 16px;
   }
   .hero-premium .hero-actions {
     align-items: stretch;
@@ -2910,8 +2911,8 @@ footer > div {
   }
   .hero-premium .hero-lead {
     max-width: 520px;
-    font-size: 14px;
-    line-height: 1.48;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .hero-premium .button {
     min-height: 52px;
