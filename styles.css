@@ -2494,6 +2494,7 @@ footer > div {
   font-weight: 850;
 }
 .hero-statement {
+  color: #303030;
   max-width: none !important;
   margin: 29px 0 0 !important;
   letter-spacing: -0.078em !important;
@@ -2513,6 +2514,7 @@ footer > div {
   animation-delay: 0.06s;
 }
 .line-two {
+  color: #404040;
   margin-left: clamp(38px, 9vw, 138px);
   animation-delay: 0.16s;
 }
