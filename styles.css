@@ -2882,3 +2882,77 @@ footer > div {
     animation: none;
   }
 }
+
+/* Compact premium Hero for shorter laptop screens */
+@media (min-width: 821px) and (max-height: 820px) {
+  .hero.hero-premium {
+    min-height: 0;
+    padding-top: 92px;
+    padding-bottom: 20px;
+  }
+  .hero-topline {
+    padding-bottom: 9px;
+  }
+  .hero-statement {
+    margin-top: 18px !important;
+    font-size: clamp(58px, 7.05vw, 96px) !important;
+    line-height: 0.83 !important;
+  }
+  .line-two {
+    margin-left: clamp(28px, 7vw, 106px);
+  }
+  .line-three {
+    margin-left: clamp(8px, 2vw, 30px);
+  }
+  .hero-support {
+    gap: 36px;
+    margin-top: 20px;
+  }
+  .hero-premium .hero-lead {
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 1.48;
+  }
+  .hero-premium .button {
+    min-height: 52px;
+  }
+  .hero-film {
+    height: 230px;
+    margin-top: 20px;
+  }
+  .film-label {
+    top: 18px;
+    left: 22px;
+  }
+  .decision-track {
+    bottom: 18px;
+    left: 22px;
+  }
+  .hero-proof {
+    min-height: 44px;
+  }
+}
+
+@media (min-width: 821px) and (max-height: 700px) {
+  .hero.hero-premium {
+    padding-top: 84px;
+    padding-bottom: 16px;
+  }
+  .hero-edition {
+    display: none;
+  }
+  .hero-statement {
+    margin-top: 14px !important;
+    font-size: clamp(54px, 6.4vw, 84px) !important;
+  }
+  .hero-support {
+    margin-top: 16px;
+  }
+  .hero-film {
+    height: 190px;
+    margin-top: 16px;
+  }
+  .hero-proof {
+    min-height: 40px;
+  }
+}
