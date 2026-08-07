@@ -319,11 +319,13 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 body {
   background: var(--paper);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -2960,5 +2962,78 @@ footer > div {
   }
   .hero-proof {
     min-height: 40px;
+  }
+}
+
+/* Scroll-built sections */
+.motion-ready .scroll-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.86s cubic-bezier(0.22, 1, 0.36, 1),
+    clip-path 0.96s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, clip-path;
+}
+.motion-ready .reveal-up {
+  transform: translate3d(0, 38px, 0);
+}
+.motion-ready .reveal-left {
+  transform: translate3d(-46px, 0, 0);
+}
+.motion-ready .reveal-right {
+  transform: translate3d(46px, 0, 0);
+}
+.motion-ready .reveal-scale {
+  transform: scale(0.86);
+}
+.motion-ready .reveal-clip {
+  opacity: 1;
+  clip-path: inset(0 100% 0 0);
+  transform: translateZ(0);
+}
+.motion-ready .scroll-reveal.is-visible {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  transform: none;
+}
+.motion-ready .scroll-reveal.reveal-complete {
+  will-change: auto;
+}
+.motion-ready .manifesto-bg.parallax-media {
+  transform: scale(1.09) translate3d(0, var(--parallax-y, 0), 0);
+  will-change: transform;
+}
+.motion-ready .practice-image img.parallax-media {
+  transform: scale(1.075) translate3d(0, var(--parallax-y, 0), 0);
+  will-change: transform;
+}
+
+@media (max-width: 820px) {
+  .motion-ready .reveal-up {
+    transform: translate3d(0, 24px, 0);
+  }
+  .motion-ready .reveal-left,
+  .motion-ready .reveal-right {
+    transform: translate3d(0, 26px, 0);
+  }
+  .motion-ready .scroll-reveal {
+    transition-duration: 0.62s, 0.72s, 0.82s;
+  }
+  .motion-ready .manifesto-bg.parallax-media,
+  .motion-ready .practice-image img.parallax-media {
+    transform: scale(1.045);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .scroll-reveal {
+    opacity: 1;
+    clip-path: none;
+    transform: none;
+    transition: none;
+  }
+  .motion-ready .parallax-media {
+    transform: none;
   }
 }
