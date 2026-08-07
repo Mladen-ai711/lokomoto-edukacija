@@ -2505,8 +2505,8 @@ footer > div {
   animation-delay: 0.26s;
 }
 .hero-statement em {
-  color: #6d6a6a !important;
-  background: var(--paper-2);
+  color: var(--paper) !important;
+  background: #6d6a6a;
   box-shadow: inset 0 -0.065em 0 var(--lime);
   margin: 0 0 0 0.04em !important;
   padding: 0 0.16em 0.08em;
