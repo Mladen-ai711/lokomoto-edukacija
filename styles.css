@@ -2549,19 +2549,19 @@ footer > div {
   margin: 0;
 }
 .hero-premium .button-primary {
-  color: var(--paper);
-  background: #404040;
+  color: var(--ink);
+  background: var(--lime);
   box-shadow: 0 14px 38px rgba(7, 22, 19, 0.14);
 }
 .hero-premium .button-primary span {
-  color: var(--lime);
+  color: var(--ink);
 }
 .hero-premium .button-primary:hover {
-  color: var(--ink);
-  background: var(--lime);
+  color: var(--paper);
+  background: var(--teal-dark);
 }
 .hero-premium .button-primary:hover span {
-  color: var(--ink);
+  color: var(--paper);
 }
 .hero-premium .text-link {
   color: var(--ink);
